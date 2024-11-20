@@ -1,0 +1,28 @@
+@mixin button-style {
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+
+    &:disabled{
+        opacity: 0.5;
+    }
+}
+
+.btn-primary {
+    @include button-style;
+    background: blue;
+    color: white;
+}
+
+.btn-outlined {
+    @include button-style;
+    border: 1px solid black;
+    background: transparent;
+    color: black;
+}
+
+.btn-dark {
+    @include button-style;
+    background: black;
+    color: white;
+}
